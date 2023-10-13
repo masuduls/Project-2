@@ -1,0 +1,58 @@
+<!--events page of the project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" /> <!--imported both my stylesheet and my javascript-->
+    <script src = "utilities.js"></script>
+    <title>Upcoming Events</title>
+</head>
+<body>
+    <!--made using nav element each anchor tag links to a different page-->
+    <div class = "menu" >
+        <nav>
+            <h2 class="navTitle">The Convention</h2>
+            <ul> <!--list tag to keep the ul and li tags to create an unordered list-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "guests.html">Guests</a></li>
+                <li><a href = "events.html">Events</a></li>
+            </ul>
+            <button class = "dadJoke" onclick = "displayDadJoke();">Click For A Dad Joke (look at console)</button>
+        </nav>
+    </div>
+    <!--describes what page the user is viewing-->
+    <div class="header">
+        <h1>Upcoming Events</h1>
+    </div>
+    <div class="matchup">
+        <img src="images/concert_1.jpg" alt="Logo1" class="matchup-image">
+        <div class="mathcup-column">
+            <p class="matchup-info">Concert at Madison Square Garden</p>
+            <p class="matchup-date">October 30th, 11:00 PM</p>
+        </div>
+        <img src="images/concert_2.jpg" alt="Logo2" class="matchup-image2">
+    </div>
+    
+    <div class="artists-participating"> 
+        <h2 class="section-header">Artists Participating:</h2>
+        <div class="artist-info">
+            <img src="images/taylor_swift.jpg" alt="Taylor Swift" class="artist-image">
+            <p class="artist-name">Taylor Swift</p>
+        </div>
+        <div class="artist-info">
+            <img src="images/ed_sheeran.webp" alt="Ed Sheeran" class="artist-image">
+            <p class="artist-name">Ed Sheeran</p>
+        </div>
+        <div class="artist-info">
+            <img src="images/drake.jpg" alt="Drake" class="artist-image">
+            <p class="artist-name">Drake</p>
+        </div>
+        <div class="artist-info">
+            <img src="images/rihanna.webp" alt="Rihanna" class="artist-image">
+            <p class="artist-name">Rihanna</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

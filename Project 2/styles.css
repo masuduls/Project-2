@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: georgia;
+} 
+
+body {
+    background: linear-gradient(310deg, rgb(0, 3, 3), rgb(4, 58, 67), rgb(4, 7, 62), rgb(2, 3, 8)); 
+    background-size: 1000000% 1000000%;
+}
+
+nav {
+    display: flex; /* makes navbar responsive*/
+    align-items: center;
+    justify-content: space-between; /* even spacing amongst the level 2 project, the nav bar, and the button */
+    padding-top : 40px;
+    padding-left: 10%;
+    padding-right: 10%; /* padding added to not hug the border of the page*/
+}
+
+.navTitle {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+} 
+.navTitle2{
+    color: rgb(173, 255, 47);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block; /* this will make it to where it only takes up the require space needed acting more like a span then a div*/
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s; 
+}
+
+nav ul li a:hover{
+    color: rgb(173, 255, 47);
+}
+
+.menu {
+    margin-bottom: 50px; /* creating space so the header for the pages is not tangent to the menu*/
+}
+
+.dadJoke{
+    font-weight: bold;
+}
+
+.favButton:hover {
+    cursor:pointer;
+}
+
+.header {
+    display: flex; /* makes positioning easier instead of padding*/
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.header h1 { /* inherits the header style but just makes the h1 tag have a white text color and a size of 24px*/
+    color: rgb(255, 255, 255);
+    font-size: 24px; 
+}
+
+.tabs {
+    display: flex; /* makes positioning easier instead of padding*/
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.guests {
+    display: none; 
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fcfafa;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-around; /* spaces them evenly */
+    flex-wrap: wrap; /* allows for wrapping on smaller screens */
+}
+
+.guest-div {
+    width: 30%; /* adjusts the width of the div */
+    margin: 10px;
+}
+
+.guest-div img {
+    max-width: 100%; /* ensures the image fits within its container */
+    border-radius: 10px;
+}
+
+.home-desc {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px auto; /* adding a margin of 20 px to the top and bottom and centering it*/
+    color: rgb(253, 253, 253);
+    text-align: left;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px; 
+}
+
+.home-desc img {
+    max-width: 40%; 
+    border-radius: 10px;
+    margin-right: 20px;
+    flex: 0 0 auto; /* makes it to where the image won't grow or shrink and only takes up the space available*/
+}
+
+.home-content {
+    flex: 1; /* takes up the space the image misses*/
+}
+
+.matchup {
+    display: flex;
+    justify-content: center; /* pushes the content of the matchup div towards the center*/
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #fafafa;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    
+}
+
+.matchup-image { /* left image of the matchup*/
+    max-width: 70px;
+    border-radius: 50%; 
+    margin-right: 70px;
+}
+
+.matchup-image2 { /* right image of the matchup*/
+    max-width: 70px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.matchup-info { 
+    font-weight: bold;
+}
+.artists-participating {
+    display: flex;
+    flex-direction: column; /* makes the artist cards align from top to bottom*/
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: rgb(240, 236, 236);
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.artists-participating .section-header { /* styling the header to the div artists-participating*/
+    color: rgb(241, 236, 236);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.artist-image {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.artist-name {
+    font-weight: bold;
+    margin: 5px;
+}

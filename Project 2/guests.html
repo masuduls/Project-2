@@ -1,0 +1,70 @@
+<!--guests page of the project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" /> <!--imported both my stylesheet and my javascript-->
+    <script src = "utilities.js"></script>
+    <title>Guests</title>
+</head>
+<body>
+    <!--made using nav element each anchor tag links to a different page-->
+    <div class = "menu" >
+        <nav>
+            <h2 class="navTitle">The Convention</h2>
+            <ul> <!--list tag to keep the ul and li tags to create an unordered list-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "guests.html">Guests</a></li>
+                <li><a href = "events.html">Events</a></li>
+            </ul>
+            <button class = "dadJoke" onclick = "displayDadJoke();">Click For A Dad Joke (look at console)</button>
+        </nav>
+    </div>
+    <!--describes what page the user is viewing-->
+    <div class="header">
+        <h1>Concert Guests</h1>
+    </div>
+    <div class="tabs"> <!--div to display the two buttons together below the navigation bar-->
+        <button class="tab-button" onclick="toggleGuests('primaryGuests');">Primary Guests</button> <!--primary and secondary guests are first hidden and the button must be clicked to view the two divs below, they can be hidden by clicking the button again-->
+        <button class="tab-button" onclick="toggleGuests('secondaryGuests');">Secondary Guests</button>
+    </div>
+    <!--both divs both share the same class but share two different ids, they are similarly formatted with three guests with a picture of them, their name, and a description about them-->
+    <div id="primaryGuests" class="guests"> <!--primary guests-->
+        <div class="guest-div">
+            <img src="images/joe_biden.jpg" alt="Boe Jiden">
+            <h3>Boe Jiden</h3>
+            <p>The current president of the United Provinces of Amurica.</p>
+        </div>
+        <div class="guest-div">
+            <img src="images/donald_trump.jpg" alt="Tonald Drump">
+            <h3>Tonald Drump</h3>
+            <p>The 45th president of the United Provinces of Amurica.</p>
+        </div>
+        <div class="guest-div">
+            <img src="images/barack_obama.jpg" alt="Oarack Bbama">
+            <h3>Oarack Bbama</h3>
+            <p>The 44th president of the United Provinces of Amurica.</p>
+        </div>
+    </div>
+    
+    <div id="secondaryGuests" class="guests"> <!--secondary guests-->
+        <div class="guest-div">
+            <img src="images/john_cena.jpg" alt="John Cena">
+            <h3>John Cena</h3>
+            <p>Amurican actor and former rapper signed to the WWE, iconic figure for most.</p>
+        </div>
+        <div class="guest-div">
+            <img src="images/john_wick.jpg" alt="John Wick">
+            <h3>John Wick</h3>
+            <p>Keanu Reeves will be roleplaying as John Wick during the break, look forward to it.</p>
+        </div>
+        <div class="guest-div">
+            <img src="images/john_travolta.avif" alt="John Travolta">
+            <h3>John Travolta</h3>
+            <p>Amurican actor and singer, cultural icon of the 1970s.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

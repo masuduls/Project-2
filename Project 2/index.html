@@ -1,0 +1,50 @@
+<!--home page of the project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" /> <!--imported both my stylesheet and my javascript-->
+    <script src = "utilities.js"></script>
+    <title>Splash Page</title>
+</head>
+<body>
+    <!--made using nav element each anchor tag links to a different page-->
+    <div class = "menu" >
+        <nav>
+            <h2 class="navTitle">The Convention</h2>
+            <ul> <!--list tag to keep the ul and li tags to create an unordered list-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "guests.html">Guests</a></li>
+                <li><a href = "events.html">Events</a></li>
+            </ul>
+            <button class = "dadJoke" onclick = "displayDadJoke();">Click For A Dad Joke (look at console)</button>
+        </nav>
+    </div>
+    <!--describes what page the user is viewing-->
+    <div class="header">
+        <h1>Home Page</h1>
+    </div>
+    <!--three divs each with content describing the event with a image next to the caption-->
+    <div class="home-desc">
+        <img src="images/concert_4.jpg" alt="concert4">
+        <div class="home-content">
+            <p>This splash page introduces you to the largest ever concert being held in history. Attend at your own discretion, possible side effects include nausea from the amount of fun you'll have!</p>
+        </div>
+    </div>
+    
+    <div class="home-desc">
+        <img src="images/concert_3.jpg" alt="concert3">
+        <div class="home-content">
+            <p>The preceding concert had a record of 1,000,000 attendees, we are looking to smash that record this time! Time to break a world record!</p>
+        </div>
+    </div>
+    
+    <div class="home-desc">
+        <img src="images/concert_5.jpg" alt="concert5">
+        <div class="home-content">
+            <p>This will be located at the Madison Square Garden, make sure to be in BY THE TIME YOUR TICKET STATES, it is imperative that all attendees try their best to not be late, otherwise you risk forfeiting your seat.</p>
+        </div>
+    </div>
+</body>
+</html>
